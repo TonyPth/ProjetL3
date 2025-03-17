@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RamasserPomme : MonoBehaviour
+public class RamasserGateau : MonoBehaviour
 {
     public float rotationSpeed = 50f;
     public float floatAmplitude = 0.5f;
@@ -31,7 +31,7 @@ public class RamasserPomme : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            FindObjectOfType<GameManager>().AjouterPomme();
+            FindObjectOfType<GameManager>().GateauFinal();
 
             if (collectSound != null)
             {
